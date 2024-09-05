@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Formulário Cadastro</title>
+    </head>
+
+    <body>
+        <h1>Formulário<h1>
+    
+        <div>
+            <form action='{% url "inscricao" %}' method='POST'>{% csrf_token %}
+
+                <input type='text' placeholder='Nome...' name='nome'>
+                <br>
+                <br>
+                <input type='Email' placeholder='Email...' name='email'>
+                <br>
+                <br>
+                <input type='submit' value='CADASTRAR'>
+            </form>
+        </div>
+
+    </body>
+</html>
